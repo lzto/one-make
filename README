@@ -1,0 +1,24 @@
+the universial makefile
+==========================
+
+Usage:
+
+1. Create new makefile and include the Makefile.defaults
+2. done!
+
+Example:
+
+     $ cat Makefile
+     -include ../Makefile.defaults
+     $ make
+     mkdir -p build/./
+     cc  -I./   -c helloworld.c -o build/./helloworld.c.o
+     cc ./build/./helloworld.c.o -o build/a.out
+     $ ls
+     build  helloworld.c  Makefile
+     $ ls build/a.out
+     build/a.out
+     $ ./build/a.out
+     hello world!
+     $
+
